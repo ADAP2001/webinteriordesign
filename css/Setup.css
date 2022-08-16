@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-black: #000;
+    --color-white: #fff;
+    --color-gray: #6c757d;
+    --color-gray-dark: #343a40;
+
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+
+    --container-width-lg: 82%;
+    --container-width-md: 90%;
+    --container-width-sm: 96%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    line-height: 1.7;
+}
+
+h1 {
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.4rem;
+    ;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: var(--color-black);
+    font-weight: 400;
+}
+
+.container {
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
+section {
+    padding: 6rem 0;
+    margin: 5rem 0;
+}
+
+nav {
+    background: transparent;
+    width: 100vw;
+    height: 4rem;
+    position: fixed;
+    top: 0;
+    z-index: 200;
+}
+
+/* Bagian Button */
+.btn {
+    position: relative;
+    padding: 0.5rem 0.8rem;
+}
+
+.btn-header {
+    position: relative;
+    padding: 1rem 2rem;
+}
+
+.btn-black {
+    background: var(--color-black);
+    color: var(--color-white);
+}
+
+.btn-black::after {
+    position: absolute;
+    right: -6px;
+    bottom: -6px;
+    background: var(--bs-gray-500);
+    content: "GET STARTED";
+    padding: 0.3rem 1.8rem;
+    z-index: -1;
+}
+
+.btn-1 {
+    border: 1.5px solid black;
+    color: black;
+    background: #fff;
+    font-weight: 500;
+    transition: all 400ms ease;
+}
+
+.btn-1::after {
+    position: absolute;
+    right: -6px;
+    bottom: -6px;
+    border: 1.5px solid var(--color-black);
+    content: "";
+    padding: 0.8rem 3.6rem;
+    z-index: -1;
+    background: #fff;
+}
+
+.btn-1-custom {
+    border: 1.5px solid black;
+    color: black;
+    background: #fff;
+    font-weight: 500;
+    transition: all 400ms ease;
+}
+
+.btn-1-custom::after {
+    position: absolute;
+    right: -6px;
+    bottom: -6px;
+    border: 1.5px solid var(--color-black);
+    content: "GET STARTED";
+    padding: 0.3rem 1.8rem;
+    z-index: -1;
+}
+
+/* change navbar styles on scroll using javascript */
+.window-scroll {
+    background: var(--bs-gray-500);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+}

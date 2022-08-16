@@ -1,0 +1,23 @@
+.btn {
+    position: relative;
+    padding: 1rem 1.5rem;
+    font-size: 1.25rem;
+}
+
+.btn-1 {
+    border: 2px solid black;
+    color: black;
+    background: #fff;
+    font-weight: 700;
+}
+
+.btn-1:hover::after {
+    border: 2px solid black;
+    content: "Click Me";
+    padding: 0.4rem 1.5rem;
+    position: absolute;
+    right: -7px;
+    bottom: -7px;
+    z-index: -1;
+    background: #111;
+}
